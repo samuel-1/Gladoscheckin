@@ -25,9 +25,9 @@ if __name__ == '__main__':
 
         referer = 'https://glados.cloud/console/checkin'
         origin = "https://glados.cloud"
-        useragent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+        useragent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
         payload = {
-            'token': 'glados.one'
+            'token': 'glados.cloud'
         }
         
         for cookie in cookies:
@@ -95,4 +95,5 @@ if __name__ == '__main__':
     else:
         pushdeer = PushDeer(pushkey=sckey) 
         pushdeer.send_text(title, desp=context)
+
 
